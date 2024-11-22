@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente diminua o tamanho do seu navegador.</p>
+<!--A tag source sempre embaixo de PICTURE / Sempre na ordem.-->
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprendera reproduzir Áudios em HTML5</p>
+    <audio src="midia/at-the-fair.mp3" controls autoplay></audio>
+
+    <audio preload="metadata" controls loop>
+        <source src="midia/feeling-fab.mp3" type="audio/mpeg">
+        <source src="midia/feeling-fab.ogg" type="audio/ogg">
+        <source src="midia/feeling-fab.wav" type="audio/wav">
+    </audio>
+    <p>Infelizmente seu navegador não conseguer reproduzir áduio. <a href="midia/feeling-fab.mp3">Clique aqui para baixar o arquivo MP3</a>. N</p>
+</body>
+</html>
